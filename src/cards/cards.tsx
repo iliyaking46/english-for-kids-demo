@@ -1,4 +1,5 @@
 import React from "react";
+import {useParams} from "react-router-dom";
 import {Card, CardType} from "./card";
 
 import img1 from './memes/1.jpg'
@@ -62,6 +63,8 @@ const CARDS: CardType[] = [
 ]
 
 export function Cards() {
+    const {category} = useParams<{category: string}>();
+    console.log(category)
     return (
         <div className="container">
             {CARDS.map((card, index) => <Card {...card} key={index} />)}

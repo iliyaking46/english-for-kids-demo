@@ -1,5 +1,7 @@
 import React from "react";
-
+import {
+    Link
+} from "react-router-dom";
 import img1 from './pepes/2.jpg'
 import img2 from './pepes/3.jpg'
 import img3 from './pepes/4.jpg'
@@ -62,10 +64,10 @@ export function MainPage() {
     return (
         <div className="container">
             {CARDS.map((card, index) => (
-                <a href={card.category} className="theme-card" key={index}>
+                <Link to={card.category} className="theme-card" key={index}>
                     <img src={card.img} alt="img"/>
                     {card.name}
-                </a>
+                </Link>
             ))}
         </div>
     )
