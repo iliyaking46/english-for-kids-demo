@@ -58,7 +58,7 @@ const CARDS: Card[] = [
     },
 ]
 
-export function Container() {
+export function MainPage() {
     return (
         <div className="container">
             {CARDS.map((card, index) => (

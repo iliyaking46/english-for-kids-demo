@@ -85,6 +85,7 @@ code {
   transition: 0.3s;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  background-image: url('rotate.png');
 }
 
 .translate {
