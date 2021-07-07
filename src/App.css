@@ -1,38 +1,153 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 15px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #ccc;
+  margin: 20px 25px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 40%);
+  -webkit-transition: box-shadow 0.25s linear, -webkit-transform 0.7s;
+  transition: box-shadow 0.25s linear, -webkit-transform 0.7s;
+  transition: box-shadow 0.25s linear, transform 0.7s;
+  transition: box-shadow 0.25s linear, transform 0.7s, -webkit-transform 0.7s;
+}
+
+.back,
+.front {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-header {
+  margin-top: 200px;
+  padding: 0 15px;
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 45px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+  width: 100%;
   pointer-events: none;
+  background: #fff;
+  color: #212529;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rotate {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  bottom: 5px;
+  right: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.translate {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.back,
+.front,
+.rotate {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  box-shadow: -1px 5px 15px 0 rgb(0 0 0/50%);
+}
+
+.rotate:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+theme-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 15px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.theme-card {
+  width: 300px;
+  height: 280px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  color: #212529;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fd6a63),color-stop(40%,#feb46b),color-stop(40%,#fff),to(#fff));
+  background: linear-gradient(180deg,#fd6a63,#feb46b 40%,#fff 0,#fff);
+  margin: 20px 25px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theme-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  object-fit: cover;
+  margin: 30px auto;
 }
