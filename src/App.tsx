@@ -18,7 +18,7 @@ function App() {
       <Route path="/" exact>
         <MainPage />
       </Route>
-      <Route path="/:category">
+      <Route path="/:type">
         <Cards play={play} />
       </Route>
     </Router>

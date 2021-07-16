@@ -4,19 +4,22 @@ export type CardType = {
   word: string,
   translation: string,
   image: string,
-  audioSrc: string
+  soundSrc: string
 }
 
 type Props = CardType & {
   play: boolean
 }
 
-export function Card({word, translation, image, play}: Props) {
+export function Card({word, translation, image, soundSrc, play}: Props) {
   const [translate, setTranslate] = useState(false);
 
   function playSound() {
     if (play) {
-      const audio = new Audio('/correct.mp3')
+      const audio = new Audio('assets/sounds/system-sounds/correct.mp3')
+      audio.play()
+    } else {
+      const audio = new Audio(soundSrc)
       audio.play()
     }
   }
