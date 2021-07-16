@@ -1,23 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import './App.css';
+import {MainPage} from './main-page/main-page';
+import {Cards} from "./cards/cards";
 
 function App() {
+  const [play, setPlay] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <input type="checkbox" id="play" onChange={() => setPlay(!play)} checked={play} />
+        <label htmlFor="play">{play ? 'Train' : 'Play'}</label>
+      </div>
+      <Route path="/" exact>
+        <MainPage />
+      </Route>
+      <Route path="/:category">
+        <Cards play={play} />
+      </Route>
+    </Router>
   );
 }
 
