@@ -1,62 +1,24 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import data from "../data.json"
+import {CardType} from "../cards/card";
 
-type Card = {
+type Category = {
+  type: string,
   name: string,
-  img: string,
-  category: string
+  imgSrc: string,
+  items: CardType[]
 }
 
-const CARDS: Card[] = [
-  {
-    name: 'Action A',
-    img: '/pepes/1.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Action B',
-    img: '/pepes/2.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Action C',
-    img: '/pepes/3.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Adjective',
-    img: '/pepes/4.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Animal',
-    img: '/pepes/5.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Animal 2',
-    img: '/pepes/6.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Animal 3',
-    img: '/pepes/7.jpg',
-    category: 'memes'
-  },
-  {
-    name: 'Animal 4',
-    img: '/pepes/8.jpg',
-    category: 'memes'
-  },
-]
+const CATEGORIES = (data as Category[]).map(({type, name, imgSrc}) => ({type, name, imgSrc}))
 
 export function MainPage() {
   return (
     <div className="theme-container">
-      {CARDS.map((card, index) => (
-        <Link to={card.category} className="theme-card" key={index}>
-          <img src={card.img} alt="img" />
-          {card.name}
+      {CATEGORIES.map((cat) => (
+        <Link to={cat.type} className="theme-card" key={cat.type}>
+          <img src={cat.imgSrc} alt="img" />
+          {cat.name}
         </Link>
       ))}
     </div>
