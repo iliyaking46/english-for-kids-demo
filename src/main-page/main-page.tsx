@@ -1,6 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
-import data from "../data.json"
 import {CardType} from "../cards/card";
 
 type Category = {
@@ -10,12 +9,22 @@ type Category = {
   items: CardType[]
 }
 
-const CATEGORIES = (data as Category[]).map(({type, name, imgSrc}) => ({type, name, imgSrc}))
-
 export function MainPage() {
+  const [categories, setCategories] = useState<Category[]>([])
+  useEffect(() => {
+    const loadData = async () => {
+      const res = await fetch('/api/categories')
+      const data = await res.json()
+
+      setCategories(data)
+    }
+
+    loadData()
+  }, [])
+
   return (
     <div className="theme-container">
-      {CATEGORIES.map((cat) => (
+      {categories.map((cat) => (
         <Link to={cat.type} className="theme-card" key={cat.type}>
           <img src={cat.imgSrc} alt="img" />
           {cat.name}

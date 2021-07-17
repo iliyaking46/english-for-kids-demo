@@ -1,0 +1,442 @@
+[
+  {
+    "type": "action_a",
+    "name": "Action A",
+    "imgSrc": "assets/images/themes/1.jpg",
+    "items": [
+      {
+        "word": "cry",
+        "translation": "плакать",
+        "image": "assets/images/action-a/1.jpg",
+        "soundSrc": "assets/sounds/action-a/cry.mp3"
+      },
+      {
+        "word": "dance",
+        "translation": "танцевать",
+        "image": "assets/images/action-a/2.jpg",
+        "soundSrc": "assets/sounds/action-a/dance.mp3"
+      },
+      {
+        "word": "dive",
+        "translation": "нырять",
+        "image": "assets/images/action-a/3.jpg",
+        "soundSrc": "assets/sounds/action-a/dive.mp3"
+      },
+      {
+        "word": "draw",
+        "translation": "рисовать",
+        "image": "assets/images/action-a/4.jpg",
+        "soundSrc": "assets/sounds/action-a/draw.mp3"
+      },
+      {
+        "word": "fish",
+        "translation": "ловить рыбу",
+        "image": "assets/images/action-a/5.jpg",
+        "soundSrc": "assets/sounds/action-a/fish.mp3"
+      },
+      {
+        "word": "fly",
+        "translation": "летать",
+        "image": "assets/images/action-a/6.jpg",
+        "soundSrc": "assets/sounds/action-a/fly.mp3"
+      },
+      {
+        "word": "hug",
+        "translation": "обнимать",
+        "image": "assets/images/action-a/7.jpg",
+        "soundSrc": "assets/sounds/action-a/hug.mp3"
+      },
+      {
+        "word": "jump",
+        "translation": "прыгать",
+        "image": "assets/images/action-a/8.jpg",
+        "soundSrc": "assets/sounds/action-a/jump.mp3"
+      }
+    ]
+  },
+  {
+    "type": "action_b",
+    "name": "Action B",
+    "imgSrc":  "assets/images/themes/2.jpg",
+    "items": [
+      {
+        "word": "open",
+        "translation": "открывать",
+        "image": "assets/images/action-b/1.jpg",
+        "soundSrc": "assets/sounds/action-b/open.mp3"
+      },
+      {
+        "word": "play",
+        "translation": "играть",
+        "image": "assets/images/action-b/2.jpg",
+        "soundSrc": "assets/sounds/action-b/play.mp3"
+      },
+      {
+        "word": "point",
+        "translation": "указывать",
+        "image": "assets/images/action-b/3.jpg",
+        "soundSrc": "assets/sounds/action-b/point.mp3"
+      },
+      {
+        "word": "ride",
+        "translation": "ездить",
+        "image": "assets/images/action-b/4.jpg",
+        "soundSrc": "assets/sounds/action-b/ride.mp3"
+      },
+      {
+        "word": "run",
+        "translation": "бегать",
+        "image": "assets/images/action-b/5.jpg",
+        "soundSrc": "assets/sounds/action-b/run.mp3"
+      },
+      {
+        "word": "sing",
+        "translation": "петь",
+        "image": "assets/images/action-b/6.jpg",
+        "soundSrc": "assets/sounds/action-b/sing.mp3"
+      },
+      {
+        "word": "skip",
+        "translation": "прыгать на скакалке",
+        "image": "assets/images/action-b/7.jpg",
+        "soundSrc": "assets/sounds/action-b/skip.mp3"
+      },
+      {
+        "word": "swim",
+        "translation": "плавать",
+        "image": "assets/images/action-b/8.jpg",
+        "soundSrc": "assets/sounds/action-b/swim.mp3"
+      }
+    ]
+  },
+  {
+    "type": "action_c",
+    "name": "Action C",
+    "imgSrc":  "assets/images/themes/3.jpg",
+    "items": [
+      {
+        "word": "argue",
+        "translation": "спорить",
+        "image": "assets/images/action-c/1.jpg",
+        "soundSrc": "assets/sounds/action-c/argue.mp3"
+      },
+      {
+        "word": "build",
+        "translation": "строить",
+        "image": "assets/images/action-c/2.jpg",
+        "soundSrc": "assets/sounds/action-c/build.mp3"
+      },
+      {
+        "word": "carry",
+        "translation": "нести",
+        "image": "assets/images/action-c/3.jpg",
+        "soundSrc": "assets/sounds/action-c/carry.mp3"
+      },
+      {
+        "word": "catch",
+        "translation": "ловить",
+        "image": "assets/images/action-c/4.jpg",
+        "soundSrc": "assets/sounds/action-c/catch.mp3"
+      },
+      {
+        "word": "drive",
+        "translation": "водить машину",
+        "image": "assets/images/action-c/5.jpg",
+        "soundSrc": "assets/sounds/action-c/drive.mp3"
+      },
+      {
+        "word": "drop",
+        "translation": "падать",
+        "image": "assets/images/action-c/6.jpg",
+        "soundSrc": "assets/sounds/action-c/drop.mp3"
+      },
+      {
+        "word": "pull",
+        "translation": "тянуть",
+        "image": "assets/images/action-c/7.jpg",
+        "soundSrc": "assets/sounds/action-c/pull.mp3"
+      },
+      {
+        "word": "push",
+        "translation": "толкать",
+        "image": "assets/images/action-c/8.jpg",
+        "soundSrc": "assets/sounds/action-c/push.mp3"
+      }
+    ]
+  },
+  {
+    "type": "adjective",
+    "name": "Adjective",
+    "imgSrc":  "assets/images/themes/4.jpg",
+    "items": [
+      {
+        "word": "big",
+        "translation": "большой",
+        "image": "assets/images/adjective/1.jpg",
+        "soundSrc": "assets/sounds/adjective/big.mp3"
+      },
+      {
+        "word": "small",
+        "translation": "маленький",
+        "image": "assets/images/adjective/2.jpg",
+        "soundSrc": "assets/sounds/adjective/small.mp3"
+      },
+      {
+        "word": "fast",
+        "translation": "быстрый",
+        "image": "assets/images/adjective/3.jpg",
+        "soundSrc": "assets/sounds/adjective/fast.mp3"
+      },
+      {
+        "word": "slow",
+        "translation": "медленный",
+        "image": "assets/images/adjective/4.jpg",
+        "soundSrc": "assets/sounds/adjective/slow.mp3"
+      },
+      {
+        "word": "friendly",
+        "translation": "дружелюбный",
+        "image": "assets/images/adjective/5.jpg",
+        "soundSrc": "assets/sounds/adjective/friendly.mp3"
+      },
+      {
+        "word": "unfriendly",
+        "translation": "недружелюбный",
+        "image": "assets/images/adjective/6.jpg",
+        "soundSrc": "assets/sounds/adjective/unfriendly.mp3"
+      },
+      {
+        "word": "young",
+        "translation": "молодой",
+        "image": "assets/images/adjective/7.jpg",
+        "soundSrc": "assets/sounds/adjective/young.mp3"
+      },
+      {
+        "word": "old",
+        "translation": "старый",
+        "image": "assets/images/adjective/8.jpg",
+        "soundSrc": "assets/sounds/adjective/old.mp3"
+      }
+    ]
+  },
+  {
+    "type": "animals_a",
+    "name": "Animals A",
+    "imgSrc":  "assets/images/themes/5.jpg",
+    "items": [
+      {
+        "word": "cat",
+        "translation": "кот",
+        "image": "assets/images/animals-a/1.jpg",
+        "soundSrc": "assets/sounds/animals-a/cat.mp3"
+      },
+      {
+        "word": "chick",
+        "translation": "цыпленок",
+        "image": "assets/images/animals-a/2.jpg",
+        "soundSrc": "assets/sounds/animals-a/chick.mp3"
+      },
+      {
+        "word": "chicken",
+        "translation": "курица",
+        "image": "assets/images/animals-a/3.jpg",
+        "soundSrc": "assets/sounds/animals-a/chicken.mp3"
+      },
+      {
+        "word": "dog",
+        "translation": "собака",
+        "image": "assets/images/animals-a/4.jpg",
+        "soundSrc": "assets/sounds/animals-a/dog.mp3"
+      },
+      {
+        "word": "horse",
+        "translation": "лошадь",
+        "image": "assets/images/animals-a/5.jpg",
+        "soundSrc": "assets/sounds/animals-a/horse.mp3"
+      },
+      {
+        "word": "pig",
+        "translation": "свинья",
+        "image": "assets/images/animals-a/6.jpg",
+        "soundSrc": "assets/sounds/animals-a/pig.mp3"
+      },
+      {
+        "word": "rabbit",
+        "translation": "кролик",
+        "image": "assets/images/animals-a/7.jpg",
+        "soundSrc": "assets/sounds/animals-a/rabbit.mp3"
+      },
+      {
+        "word": "sheep",
+        "translation": "овца",
+        "image": "assets/images/animals-a/8.jpg",
+        "soundSrc": "assets/sounds/animals-a/sheep.mp3"
+      }
+    ]
+  },
+  {
+    "type": "animals_b",
+    "name": "Animals B",
+    "imgSrc":  "assets/images/themes/6.jpg",
+    "items": [
+      {
+        "word": "bird",
+        "translation": "птица",
+        "image": "assets/images/animals-b/1.jpg",
+        "soundSrc": "assets/sounds/animals-b/bird.mp3"
+      },
+      {
+        "word": "fish",
+        "translation": "рыба",
+        "image": "assets/images/animals-b/2.jpg",
+        "soundSrc": "assets/sounds/animals-b/fish.mp3"
+      },
+      {
+        "word": "frog",
+        "translation": "лягушка",
+        "image": "assets/images/animals-b/3.jpg",
+        "soundSrc": "assets/sounds/animals-b/frog.mp3"
+      },
+      {
+        "word": "giraffe",
+        "translation": "жираф",
+        "image": "assets/images/animals-b/4.jpg",
+        "soundSrc": "assets/sounds/animals-b/giraffe.mp3"
+      },
+      {
+        "word": "lion",
+        "translation": "лев",
+        "image": "assets/images/animals-b/5.jpg",
+        "soundSrc": "assets/sounds/animals-b/lion.mp3"
+      },
+      {
+        "word": "mouse",
+        "translation": "мышь",
+        "image": "assets/images/animals-b/6.jpg",
+        "soundSrc": "assets/sounds/animals-b/mouse.mp3"
+      },
+      {
+        "word": "turtle",
+        "translation": "черепаха",
+        "image": "assets/images/animals-b/7.jpg",
+        "soundSrc": "assets/sounds/animals-b/turtle.mp3"
+      },
+      {
+        "word": "dolphin",
+        "translation": "дельфин",
+        "image": "assets/images/animals-b/8.jpg",
+        "soundSrc": "assets/sounds/animals-b/dolphin.mp3"
+      }
+    ]
+  },
+  {
+    "type": "clothes",
+    "name": "Clothes",
+    "imgSrc":  "assets/images/themes/7.jpg",
+    "items": [
+      {
+        "word": "skirt",
+        "translation": "юбка",
+        "image": "assets/images/clothes/1.jpg",
+        "soundSrc": "assets/sounds/clothes/skirt.mp3"
+      },
+      {
+        "word": "pants",
+        "translation": "штаны",
+        "image": "assets/images/clothes/2.jpg",
+        "soundSrc": "assets/sounds/clothes/pants.mp3"
+      },
+      {
+        "word": "blouse",
+        "translation": "блузка",
+        "image": "assets/images/clothes/3.jpg",
+        "soundSrc": "assets/sounds/clothes/blouse.mp3"
+      },
+      {
+        "word": "dress",
+        "translation": "платье",
+        "image": "assets/images/clothes/4.jpg",
+        "soundSrc": "assets/sounds/clothes/dress.mp3"
+      },
+      {
+        "word": "boot",
+        "translation": "ботинки",
+        "image": "assets/images/clothes/5.jpg",
+        "soundSrc": "assets/sounds/clothes/boot.mp3"
+      },
+      {
+        "word": "shirt",
+        "translation": "футболка",
+        "image": "assets/images/clothes/6.jpg",
+        "soundSrc": "assets/sounds/clothes/shirt.mp3"
+      },
+      {
+        "word": "coat",
+        "translation": "пальто",
+        "image": "assets/images/clothes/7.jpg",
+        "soundSrc": "assets/sounds/clothes/coat.mp3"
+      },
+      {
+        "word": "shoes",
+        "translation": "туфли",
+        "image": "assets/images/clothes/8.jpg",
+        "soundSrc": "assets/sounds/clothes/shoe.mp3"
+      }
+    ]
+  },
+  {
+    "type": "emotions",
+    "name": "Emotions",
+    "imgSrc":  "assets/images/themes/8.jpg",
+    "items": [
+      {
+        "word": "sad",
+        "translation": "грустный",
+        "image": "assets/images/emotions/1.jpg",
+        "soundSrc": "assets/sounds/emotions/sad.mp3"
+      },
+      {
+        "word": "angry",
+        "translation": "злой",
+        "image": "assets/images/emotions/2.jpg",
+        "soundSrc": "assets/sounds/emotions/angry.mp3"
+      },
+      {
+        "word": "happy",
+        "translation": "счастливый",
+        "image": "assets/images/emotions/3.jpg",
+        "soundSrc": "assets/sounds/emotions/happy.mp3"
+      },
+      {
+        "word": "tired",
+        "translation": "уставший",
+        "image": "assets/images/emotions/4.jpg",
+        "soundSrc": "assets/sounds/emotions/tired.mp3"
+      },
+      {
+        "word": "surprised",
+        "translation": "удивленный",
+        "image": "assets/images/emotions/5.jpg",
+        "soundSrc": "assets/sounds/emotions/surprised.mp3"
+      },
+      {
+        "word": "scared",
+        "translation": "напуганный",
+        "image": "assets/images/emotions/6.jpg",
+        "soundSrc": "assets/sounds/emotions/scared.mp3"
+      },
+      {
+        "word": "smile",
+        "translation": "улыбка",
+        "image": "assets/images/emotions/7.jpg",
+        "soundSrc": "assets/sounds/emotions/smile.mp3"
+      },
+      {
+        "word": "laugh",
+        "translation": "смех",
+        "image": "assets/images/emotions/8.jpg",
+        "soundSrc": "assets/sounds/emotions/laugh.mp3"
+      }
+    ]
+  }
+]
