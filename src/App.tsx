@@ -1,16 +1,19 @@
 import React, {useState} from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from "react-router-dom";
 import './App.css';
 import {MainPage} from './main-page/main-page';
 import {Cards} from "./cards/cards";
+import { AdminWorkplace } from './admin/admin-workplace';
 
-function App() {
+const Main = () => {
   const [play, setPlay] = useState(false);
+
   return (
-    <Router>
+    <>
       <div>
         <input type="checkbox" id="play" onChange={() => setPlay(!play)} checked={play} />
         <label htmlFor="play">{play ? 'Train' : 'Play'}</label>
@@ -21,8 +24,21 @@ function App() {
       <Route path="/:type">
         <Cards play={play} />
       </Route>
-    </Router>
-  );
+    </>
+  )
 }
+
+const App = () => (
+  <Router>
+    <Switch>
+      <Route path="/admin">
+        <AdminWorkplace />
+      </Route>
+      <Route path="/">
+        <Main />
+      </Route>
+    </Switch>
+  </Router>
+);
 
 export default App;

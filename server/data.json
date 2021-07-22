@@ -1,6 +1,6 @@
 [
   {
-    "type": "action_a",
+    "type": "action-a",
     "name": "Action A",
     "imgSrc": "assets/images/themes/1.jpg",
     "items": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "type": "action_b",
+    "type": "action-b",
     "name": "Action B",
     "imgSrc":  "assets/images/themes/2.jpg",
     "items": [
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "type": "action_c",
+    "type": "action-c",
     "name": "Action C",
     "imgSrc":  "assets/images/themes/3.jpg",
     "items": [
@@ -220,7 +220,7 @@
     ]
   },
   {
-    "type": "animals_a",
+    "type": "animals-a",
     "name": "Animals A",
     "imgSrc":  "assets/images/themes/5.jpg",
     "items": [
@@ -275,7 +275,7 @@
     ]
   },
   {
-    "type": "animals_b",
+    "type": "animals-b",
     "name": "Animals B",
     "imgSrc":  "assets/images/themes/6.jpg",
     "items": [

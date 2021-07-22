@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {CardType} from "../cards/card";
 
-type Category = {
+export type Category = {
   type: string,
   name: string,
   imgSrc: string,
